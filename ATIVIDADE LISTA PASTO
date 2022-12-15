@@ -1,0 +1,15 @@
+ pastoUm = {'vacas':['branca','preta','bege','marrom'],
+            'bezerro':['branca','preta','bege','marrom'],
+            'cabra':['branca','preta','bege','marrom'],
+            'ovelha':['branca','preta','bege','marrom']}
+ pastoDois = []
+ print(f'O pasto um está composto por:{pastoUm}')
+ print('O pasto dois está vazio')
+ print('Movendo os animais de pasto...')
+ pastoDois.append(pastoUm['vacas'])# pastoDois.append(pastoUm['bezerro'])
+ pastoDois.append(pastoUm['cabra'])
+ pastoDois = pastoUm.pop('vacas')
+ pastoDois = pastoUm.pop('bezerro')
+ pastoDois = pastoUm.pop('cabra')
+ print(f'O pasto um agora está composto por:\n{pastoUm}')
+ print(f'E o pasto dois agora está composto por:\n vacas: {pastoDois}\n bezerro: {pastoDois}\n cabra: {pastoDois}')
